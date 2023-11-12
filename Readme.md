@@ -9,3 +9,8 @@ Things new users should do:
 
 Features that it comes with:
 - Templater is already setup. 
+- Basic QuickAdd (Daily log + Life rollup log)
+- Periodic Plugin linked to [[Daily Note Template]], [[Monthly Review Template]], [[Monthly Review Template]] with dated naming scheme similar to [tutorial](https://youtu.be/tUWjyzvljfs?si=7PmiNmE_TO3XHJPW)
+
+Upcoming:
+- Meta-template picker
