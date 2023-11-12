@@ -1424,6 +1424,24 @@
       "createdDate": 1699773517151,
       "modifiedDate": 1699773517152,
       "sizeInBytes": 257952
+    },
+    "Readme.md": {
+      "isCountable": true,
+      "isDirectory": false,
+      "noteCount": 1,
+      "wordCount": 137,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.45666666666666667,
+      "characterCount": 851,
+      "nonWhitespaceCharacterCount": 708,
+      "readingTimeInMinutes": 0.5169811320754717,
+      "linkCount": 4,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1699778570108,
+      "modifiedDate": 1699778985986,
+      "sizeInBytes": 851
     }
   }
 }
