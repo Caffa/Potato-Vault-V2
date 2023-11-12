@@ -1,0 +1,28 @@
+
+.theme-light{
+  --text-italic: #fc6413;
+  --text-bold: #8269FF;
+
+}
+
+.theme-dark{
+  --text-italic: #f2bb50;
+  --text-bold: #8269FF;
+
+}
+
+.cm-strong{
+  color: var(--text-bold);
+}
+
+.cm-em{
+  color: var(--text-italic);
+}
+
+span.cm-quote.cm-quote-1.cm-strong {
+  color: var(--text-bold);
+}
+
+span.cm-quote.cm-quote-1.cm-em {
+  color: var(--text-italic);
+}

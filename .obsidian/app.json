@@ -1,0 +1,13 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "propertiesInDocument": "source",
+  "spellcheck": false,
+  "attachmentFolderPath": "90 Meta/Attachments",
+  "userIgnoreFilters": [
+    "logseq",
+    "80 Archive",
+    "logseq/",
+    "80 Archive/"
+  ]
+}

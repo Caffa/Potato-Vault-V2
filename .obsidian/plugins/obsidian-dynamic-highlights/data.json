@@ -1,0 +1,63 @@
+{
+  "selectionHighlighter": {
+    "highlightWordAroundCursor": false,
+    "highlightSelectedText": true,
+    "maxMatches": 100,
+    "minSelectionLength": 3,
+    "highlightDelay": 200,
+    "ignoredWords": "myself, our, ours, ourselves, you, your, yours, yourself, yourselves, him, his, himself, she, her, hers, herself, its, itself, they, them, their, theirs, themselves, what, which, who, whom, this, that, these, those, are, was, were, been, being, have, has, had, having, does, did, doing, the, and, but, because, until, while, for, with, about, against, between, into, through, during, before, after, above, below, from, down, out, off, over, under, again, further, then, once, here, there, when, where, why, how, all, any, both, each, few, more, most, other, some, such, nor, not, only, own, same, than, too, very, can, will, just, don, should,now"
+  },
+  "staticHighlighter": {
+    "queries": {
+      "sidenote": {
+        "class": "sidenote",
+        "color": "#42188038",
+        "regex": true,
+        "query": "<s>(.*)</s>",
+        "mark": [
+          "match"
+        ],
+        "css": "/* Sidenotes with HTML-Tags\n ------------------------*/\n\n/* This class is assigned to <s> HTML Tags via the Dynamic Highlights Plugin.*/\n.sidenote {\n color:  var(--interactive-accent);\n}\n\n\n/* Side Symbol */\n:not(.hide-sides) > s:before {\n    content:  '● ';\n    color: var(--interactive-accent) ;\n    font-size: 1em;\n    margin-left: -10px;\n}\n\n/* Content of the Sidenote */\n:not(.hide-sides) > s {\n  float: right;\n  position: relative;\n  width: 150px;\n  clear: left;\n  margin-right: -176px;\n  background-color: transparent;\n  text-decoration: unset;\n  text-align: left;\n  line-height: 1.5em;\n  font-size: 0.7em;\n  color: var(--text);\n}\n\n\n/* Content of the Sidenote when not hovered */\n.hide-sides s {\n  color: transparent;\n}\n\n/* All children of the sidenote (bold, links etc.) should not show when not hovered */\n.hide-sides s > * {\n  visibility: hidden;\n}\n\n/* Show on hover */\n.hide-sides s:hover {\n  color: unset;\n}\n\n.hide-sides s:hover > * {\n  visibility: visible;\n}\n"
+      },
+      "Thought": {
+        "class": "Thought",
+        "color": "#797A7C3D",
+        "regex": true,
+        "query": "[\\s\"]'(.*?)'[\\s,.\\?!\":]",
+        "mark": [
+          "match",
+          "group"
+        ],
+        "css": ".cm-line .Thought{\n\tfont-style: italic;\n\tbackground: none;\n\tcolor: var(--text-italic);\n}\nspan.cm-quote.cm-quote-1 .Thought{\n\tfont-style: italic;\n\tbackground: none;\n\tcolor: var(--text-italic);\n}\n\n/* where to disable */\n.HyperMD-quote.cm-line .Thought,\n.pdf-annotations .cm-line .Thought {\n\ttext-decoration: none;\n\tcolor: unset;\n}"
+      },
+      "Dash": {
+        "class": "Dash",
+        "color": "#dbdbdb",
+        "regex": true,
+        "query": "[^\\t\\-\\–\\n]+[-–][^\\S\\t\\n\\r]([^\\]\\[\\t\\n]+?)[^\\S\\t\\n\\r][-–]\\s",
+        "mark": [
+          "match",
+          "group"
+        ],
+        "css": ""
+      },
+      "Dialogue": {
+        "class": "Dialogue",
+        "color": "#9D9D9D4A",
+        "regex": true,
+        "query": "[“\"”](.*?)[“\"”]",
+        "mark": [
+          "match",
+          "group"
+        ],
+        "css": ""
+      }
+    },
+    "queryOrder": [
+      "sidenote",
+      "Thought",
+      "Dash",
+      "Dialogue"
+    ]
+  }
+}
